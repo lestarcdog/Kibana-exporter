@@ -27,7 +27,7 @@ public class KibanaExporter {
             System.exit(0);
         }
         if (!args[0].contains(":")) {
-            throw new IllegalArgumentException(String.format("%s not a valid format. Expected <hostname>:<port>.", args[1]));
+            throw new IllegalArgumentException(String.format("%s not a valid format. Expected <hostname>:<port>.", args[0]));
         }
 
         // set ES address
