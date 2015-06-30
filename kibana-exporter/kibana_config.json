@@ -1,0 +1,28 @@
+{
+  "entries" : [ {
+    "index" : ".kibana",
+    "type" : "config",
+    "id" : "4.1.0",
+    "source" : "{\"buildNum\":7467,\"defaultIndex\":\"ogc*\"}"
+  }, {
+    "index" : ".kibana",
+    "type" : "visualization",
+    "id" : "Super-map-of-everything",
+    "source" : "{\"title\":\"Super map of everything\",\"visState\":\"{\\\"type\\\":\\\"tile_map\\\",\\\"params\\\":{\\\"mapType\\\":\\\"Scaled Circle Markers\\\",\\\"isDesaturated\\\":true,\\\"heatMaxZoom\\\":16,\\\"heatMinOpacity\\\":0.1,\\\"heatRadius\\\":25,\\\"heatBlur\\\":15,\\\"heatNormalizeData\\\":true,\\\"addTooltip\\\":true},\\\"aggs\\\":[{\\\"id\\\":\\\"1\\\",\\\"type\\\":\\\"count\\\",\\\"schema\\\":\\\"metric\\\",\\\"params\\\":{}},{\\\"id\\\":\\\"2\\\",\\\"type\\\":\\\"geohash_grid\\\",\\\"schema\\\":\\\"segment\\\",\\\"params\\\":{\\\"field\\\":\\\"source-geolocation.geopoint\\\",\\\"autoPrecision\\\":true,\\\"precision\\\":2}}],\\\"listeners\\\":{}}\",\"description\":\"\",\"version\":1,\"kibanaSavedObjectMeta\":{\"searchSourceJSON\":\"{\\\"index\\\":\\\"ogc*\\\",\\\"query\\\":{\\\"query_string\\\":{\\\"query\\\":\\\"*\\\",\\\"analyze_wildcard\\\":true}},\\\"filter\\\":[]}\"}}"
+  }, {
+    "index" : ".kibana",
+    "type" : "index-pattern",
+    "id" : "ogc*",
+    "source" : "{\"title\":\"ogc*\",\"timeFieldName\":\"@timestamp\",\"fields\":\"[{\\\"name\\\":\\\"mt-version\\\",\\\"type\\\":\\\"number\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"_index\\\",\\\"type\\\":\\\"string\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":false,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"mt-creation-time\\\",\\\"type\\\":\\\"date\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"_type\\\",\\\"type\\\":\\\"string\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"mt-update-time\\\",\\\"type\\\":\\\"date\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"mt-uuids\\\",\\\"type\\\":\\\"string\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"_source\\\",\\\"type\\\":\\\"_source\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":false,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"_id\\\",\\\"type\\\":\\\"string\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":false,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"source-geolocation.geopoint\\\",\\\"type\\\":\\\"geo_point\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"source-geolocation.country-code\\\",\\\"type\\\":\\\"string\\\",\\\"count\\\":1,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"source-geolocation.city-name\\\",\\\"type\\\":\\\"string\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":false,\\\"doc_values\\\":false},{\\\"name\\\":\\\"instance-uuid\\\",\\\"type\\\":\\\"string\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":true,\\\"doc_values\\\":false},{\\\"name\\\":\\\"@timestamp\\\",\\\"type\\\":\\\"date\\\",\\\"count\\\":0,\\\"scripted\\\":false,\\\"indexed\\\":true,\\\"analyzed\\\":false,\\\"doc_values\\\":false}]\"}"
+  }, {
+    "index" : ".kibana",
+    "type" : "visualization",
+    "id" : "Requests-by-country",
+    "source" : "{\"title\":\"Requests by country\",\"visState\":\"{\\\"type\\\":\\\"histogram\\\",\\\"params\\\":{\\\"addLegend\\\":true,\\\"addTimeMarker\\\":false,\\\"addTooltip\\\":true,\\\"defaultYExtents\\\":false,\\\"mode\\\":\\\"stacked\\\",\\\"scale\\\":\\\"linear\\\",\\\"setYExtents\\\":false,\\\"shareYAxis\\\":true,\\\"times\\\":[],\\\"yAxis\\\":{}},\\\"aggs\\\":[{\\\"id\\\":\\\"1\\\",\\\"type\\\":\\\"count\\\",\\\"schema\\\":\\\"metric\\\",\\\"params\\\":{}},{\\\"id\\\":\\\"2\\\",\\\"type\\\":\\\"terms\\\",\\\"schema\\\":\\\"segment\\\",\\\"params\\\":{\\\"field\\\":\\\"source-geolocation.country-code\\\",\\\"size\\\":5,\\\"order\\\":\\\"desc\\\",\\\"orderBy\\\":\\\"1\\\"}}],\\\"listeners\\\":{}}\",\"description\":\"\",\"version\":1,\"kibanaSavedObjectMeta\":{\"searchSourceJSON\":\"{\\\"index\\\":\\\"ogc*\\\",\\\"query\\\":{\\\"query_string\\\":{\\\"query\\\":\\\"*\\\",\\\"analyze_wildcard\\\":true}},\\\"filter\\\":[]}\"}}"
+  }, {
+    "index" : ".kibana",
+    "type" : "dashboard",
+    "id" : "Default-dashboard",
+    "source" : "{\"title\":\"Default dashboard\",\"hits\":0,\"description\":\"\",\"panelsJSON\":\"[{\\\"id\\\":\\\"Requests-by-country\\\",\\\"type\\\":\\\"visualization\\\",\\\"size_x\\\":3,\\\"size_y\\\":2,\\\"col\\\":1,\\\"row\\\":1},{\\\"id\\\":\\\"Super-map-of-everything\\\",\\\"type\\\":\\\"visualization\\\",\\\"size_x\\\":6,\\\"size_y\\\":5,\\\"col\\\":4,\\\"row\\\":1}]\",\"version\":1,\"timeRestore\":false,\"kibanaSavedObjectMeta\":{\"searchSourceJSON\":\"{\\\"filter\\\":[{\\\"query\\\":{\\\"query_string\\\":{\\\"query\\\":\\\"*\\\",\\\"analyze_wildcard\\\":true}}}]}\"}}"
+  } ]
+}
